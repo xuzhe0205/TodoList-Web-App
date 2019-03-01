@@ -1,0 +1,21 @@
+{
+  "todoList": [
+    {
+      "title": "Errands",
+      "items": [
+        {
+          "item1": "Wash laundry",
+          "complete1": "ture",
+          "item2": "Wash shoes",
+          "complete2": "false",
+          "item3": "Clean table",
+          "complete3": "ture",
+          "item4": "Cook dinner",
+          "complete4": "false"
+        }
+      ],
+      "date": "Fri Oct 26 2018 23:58:40 GMT-0400",
+      "author": "Kobe Bryant"
+    }
+  ]
+}

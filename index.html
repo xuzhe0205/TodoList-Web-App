@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+    <!--User Account-->
+    <div id="username"></div>
+
+    <!--Side Nav-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+        <a href="#username" id="loGin">User Account</a>
+        <a href="#todoApp" id="hideAndShow">Todo Applications</a>
+
+    </div>
+    <div id="main">
+
+        <h2>TODO UNDO REDO</h2>
+        <p>Open the navigation bar and get started on your todo applicaiton!</p>
+        <span style="font-size:30px;cursor:pointer" id="openNav">&#9776; open</span>
+        <!--Todo Application-->
+        <div class="todoApp" id="todoApp">
+            <div id="container">
+                <input type="text" id="addTitle" placeholder="Type a new category for your todo list">
+                <button type="button" id="addTitleBtn" onclick = "addTable()">Add new todo title</button>
+            </div>
+            
+            <div id = "tableContainer0">
+                <div id="container">
+                    <input type="text" id="txtItem0" placeholder="Type your todo item here">
+                    <button style="margin:10px; float: left" type="button" id = "addItem0" onclick="addItem(event)">Add item</button>
+                    <input type="text" id="txtAuthor0" placeholder="Type author name here">
+                    <button style="margin:10px" type="button" id="addAuthor0" onclick = "addAuthor(event)">Add Author</button>
+                </div>
+                <table id="table">
+                    <thead id="tablehead">
+                        <tr>
+                            <td id="todoTitle0" class = "todoTitle" colspan=3></td>
+                        </tr>
+                        <tr>
+                            <th>NUM</th>
+                            <th id="todoItem">TODO ITEM(s)</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablebody0"></tbody>
+                    <tr>
+                        <td id="author0" class = "author" colspan=3>Author:</td>
+                    </tr>
+                    <tr>
+                        <td id="date" colspan=3>Date:</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="./dist/bundle.js"></script>
+    <script type="text/javascript" src="./src/undoRedo.js"></script>
+    <script type="text/javascript" src="todoData.json"></script>
+</body>
+</html>
